@@ -1,0 +1,223 @@
+/* Html  Starter Template */ 
+
+/***
+
+====================================================================
+        Fonts
+====================================================================
+
+***/
+
+
+
+@import url("../css/animate.css");
+@import url("../css/bootstrap.min.css");
+@import url("../css/bootstrap-icons.css");
+@import url("../css/swiper-bundle.min.css");
+
+/***
+
+====================================================================
+    Reset
+====================================================================
+
+***/
+
+* {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  outline: none;
+  font-size: 100%;
+  line-height: inherit;
+  box-sizing: border-box;
+}
+
+/*** 
+
+====================================================================
+    Global Settings
+====================================================================
+
+***/
+
+body {
+  font-size: 17px;
+  color: #212121;
+  line-height: 27px;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  background: rgb(255, 255, 255);
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover,
+a:focus,
+a:visited {
+  text-decoration: none !important;
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  position: relative;
+  font-weight: normal;
+  line-height: 1.25em;
+  margin: 0px;
+  background: none;
+  color: #212121;
+}
+
+textarea {
+  overflow: hidden;
+}
+
+button {
+  outline: none !important;
+  cursor: pointer;
+}
+
+.des-text {
+  font-size: 17px;
+  line-height: 27px;
+  font-weight: 400;
+  color: #4a4a4a;
+  margin: 0px 0px 15px;
+}
+
+::-webkit-input-placeholder {
+  color: inherit;
+}
+
+::-moz-input-placeholder {
+  color: inherit;
+}
+
+::-ms-input-placeholder {
+  color: inherit;
+}
+
+.auto-container {
+  position: static;
+  max-width: 1200px;
+  padding: 0px 15px;
+  margin: 0 auto;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+
+/*** 
+
+====================================================================
+    #Preloader
+====================================================================
+
+***/
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  background: #fff;
+  z-index: 2;
+}
+
+#preloader::before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 6px solid #0c5cd4;
+  border-top-color: #fff;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  -webkit-animation: animate-preloader 1s linear infinite;
+  animation: animate-preloader 1s linear infinite;
+}
+
+.preloader-finish {
+  opacity: 0;
+  pointer-events: none;
+}
+
+@-webkit-keyframes animate-preloader {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animate-preloader {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/*** 
+
+====================================================================
+    Swipper Css
+====================================================================
+
+***/
+
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+/* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
